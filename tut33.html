@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selector</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Baloo Bhaina 2', cursive;
+
+        }
+
+        header::before {
+            content: "";
+            background: url('https://images.unsplash.com/photo-1426901523280-39daa6101bce?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1600') no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        section {
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /*border: 4px solid red;*/
+            height: 344px;
+            justify-content: center;
+        }
+
+            /* section::after{
+        content:"this is a content";
+    }*/
+            header {
+                display: flex;
+                /*flex-direction: row;*/
+                flex-direction: column;
+
+            }
+
+            .navigation {
+                display: flex;
+                font-size: 20px;
+            }
+
+            li {
+                list-style: none;
+                padding: 10px 24px;
+            }
+
+            h1 {
+                font-size: 4rem;
+            }
+
+            p {
+                text-align: center;
+            }
+            a{
+                color: white;
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item"><a href="" class="link">Home</a></li>
+                <li class="item"><a href="" class="link">About</a></li>
+                <li class="item"><a href="" class="link">Services</a></li>
+                <li class="item"><a href="" class="link">Contact us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section>
+        <h1>Welcome to coding world</h1>
+        <p>A paragraph (from the Ancient Greek παράγραφος, parágraphos,
+            "to write beside") is a self-contained unit of discourse in w
+            riting dealing with a particular point or idea. A paragraph
+            consists of one or more sentences. Though not required by the synt
+            ax of any language, paragraphs are usually an expected part of formal
+            writing, used to organize longer prose.</p>
+    </section>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <hr>
+</body>
+
+</html>

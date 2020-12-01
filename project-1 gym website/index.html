@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jitu fitness gym</title>
+    
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+/*css reset*/
+body{
+    font-family: 'Baloo Bhaina 2', cursive;
+    margin:0px;
+    padding:0px;
+   background-image: url('image/bg.jpg');
+   color:white;
+}
+.left{
+    position:absolute;
+    left:60px;
+    top:33px;
+    /*border:2px solid red;*/
+   display:inline-block;
+   
+}
+.left img{
+    width:90px;
+    height:70px;
+    filter:invert(100%);    /* change of image color*/
+    
+}
+.left div{
+    text-align:center;
+    font-size:20px;
+    
+    line-height:29px;
+}
+.mid{
+    display:block;
+    width:55%;
+    margin:33px auto;
+   /* border:2px solid rgb(0, 255, 34);*/
+    
+}
+.right{
+    position:absolute;
+    right:34px;
+    top:33px;
+    /*border:2px solid rgb(89, 0, 255);*/
+    display:inline-block;
+    
+}
+.btn{
+    font-family: 'Baloo Bhaina 2', cursive;
+    margin:0px 9px;
+    color:white;
+    background-color: black;
+    padding:4px 14px;
+    border:2px solid grey;
+    border-radius:10px;
+    font-size:20px;
+    cursor:pointer;  /* hath vala aa jaega*/
+}
+.btn:hover{
+    background-color: rgb(97, 95, 95);
+}
+.navbar{
+    display:inline-block;
+}
+.navbar li{
+    display:inline-block;
+    color:white;
+    font-size:25px;
+}
+.navbar li a{
+    padding:34px 23px;
+    color:white;
+    text-decoration: none;
+}
+.navbar li a:hover, .navbar li a.active{
+   text-decoration: underline;
+   color:grey;
+}
+.container{
+    border:2px solid white;
+    margin:106px 80px;
+    padding:40px;
+    width:34%;
+    border-radius:40px;
+
+}
+.from-group input{
+    font-family: 'Baloo Bhaina 2', cursive;
+    text-align:center;
+    display:block;
+    width:408px;
+    padding:1px;
+  border:2px solid black;
+  margin:9px auto;
+  border-radius:15px;
+  font-size:25px;
+}
+.container button{
+    width:55%;
+    display:block;
+    margin:auto;
+    margin-top:25px;
+}
+.container h1{
+   text-align:center;  
+   
+}
+</style>
+<body>
+   <header class="header">
+
+       <!--left box for logo-->
+       <div class="left">
+     <img src="image/lv1.png" alt="not found" >
+     <div>Jitu fitness</div>
+</div>
+       <!--MID BOX FOR NAVIGRATION-->
+       <div class="mid">
+    <ul class="navbar">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="image/lv1.png" target="_black">About Us</a></li>
+        <li><a href="image/lv.png" target="_black">Fitness calcultor</a></li>
+        <li><a href="#">Contact Us</a></li>
+        
+    </ul>
+    </div>
+
+    <!-- RIGHT BOX FOR BUTTONS -->
+    <div class="right">
+          <button class="btn" >Call us now</button>
+          <button class="btn">Email Us</button>
+    </div>
+   </header> 
+   <div class="container">
+       <h1>JOin the Best Gym of Agra now</h1>
+     <from action="noaction.php">
+         <div class="from-group">
+             <input type="type" name="" placeholder="Enter the your name">
+         </div>
+         <div class="from-group">
+            <input type="type" name="" placeholder="Enter the your Age">
+        </div>
+        <div class="from-group">
+            <input type="type" name="" placeholder="Enter the your gender">
+        </div>
+        <div class="from-group">
+            <input type="type" name="" placeholder="Enter the your locality">
+        </div>
+        <div class="from-group">
+            <input type="type" name="" placeholder="Enter the your contact no">
+        </div>
+        <div class="from-group">
+            <input type="type" name="" placeholder="Enter the your email id">
+        </div>
+        <button class="btn">Submit</button>
+     </from>
+   </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+
+    }
+
+    .card {
+        padding: 23px 12px;
+        margin: 23px 12px;
+        /*border:2px solid yellow;*/
+        background-color: cyan;
+        /*box-shadow:offset-x offset-y color*/
+        /*box-shadow:10px 13px red;
+        box-shadow:-10px -13px red;*/
+
+        /*box-shadow:offset-x offset-y blur-radius color*/
+        /*box-shadow:7px 5px 10px red;*/
+        /*box-shadow:-7px -5px 10px red;
+
+        /*box-shadow:offset-x offset-y blur-radius spread-radiuscolor*/
+        /*box-shadow:7px 5px 10px 34px red;*/
+      box-shadow:10px 13px rgb(124, 112, 112),20px 23px blue;
+    }
+    .card h2{
+       text-shadow:10px 4px rgb(247, 67, 67); 
+       text-shadow:10px 4px 2px red;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>this is a c++ course</h2>
+            <p>A paragraph (from the Ancient Greek παράγραφος, parágraphos,
+                "to write beside") is a self-contained unit of discourse in w
+                riting dealing with a particular point or idea. A paragraph
+                consists of one or more sentences. Though not required by the synt
+                ax of any language, paragraphs are usually an expected part of formal
+                writing, used to organize longer prose.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>this is the html course</h2>
+            <p>A paragraph (from the Ancient Greek παράγραφος, parágraphos,
+                "to write beside") is a self-contained unit of discourse in w
+                riting dealing with a particular point or idea. A paragraph
+                consists of one or more sentences. Though not required by the synt
+                ax of any language, paragraphs are usually an expected part of formal
+                writing, used to organize longer prose.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>card3</h2>
+            <p>A paragraph (from the Ancient Greek παράγραφος, parágraphos,
+                "to write beside") is a self-contained unit of discourse in w
+                riting dealing with a particular point or idea. A paragraph
+                consists of one or more sentences. Though not required by the synt
+                ax of any language, paragraphs are usually an expected part of formal
+                writing, used to organize longer prose.</p>
+        </div>
+    </div>
+</body>
+
+</html>
